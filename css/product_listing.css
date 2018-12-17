@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+
+.header div {
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    letter-spacing: 8px;
+    /*border: 1px #eee solid;*/
+}
+
+.header {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header-box1-text {
+    text-align: center;
+    padding: 15px;
+}
+
+.header-box0 {
+    width: 20%
+}
+
+.header-box1 {
+    width: 60%;
+}
+
+.header-box2 {
+    width: 20%;
+}
+
+.cart-image {
+    width: 30px;
+    height: 30px;
+    float: right;
+    padding: 10px;
+}
+
+.manu-icon {
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    float: left;
+    padding: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.links div {
+
+    padding: 8px;
+    width: 100px
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.man-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.image {
+    width: 80%;
+    margin-left: 40px
+        /*  object-fit:cover;*/
+}
+
+.outwear {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin:20px;
+}
+
+
+.no-of-item,
+.footer1,
+.footer2 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer1 {
+    margin-top: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+
+
+}
+
+.grid > div {
+    padding: 1em;
+    width: 100%;
+
+}
+
+.image-margin {
+    text-align: center;
+
+}
+
+#demo {
+    color: white;
+    padding: 8px;
+    border: 1px #ccc solid;
+    width: 100px;
+    text-align: center;
+    background-color: black;
+    border: 2px solid black;
+
+}
+.price-font{
+  color: gray;
+}
+
+@media(max-width:600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1em;
+
+    }
+
+    .man-image {
+        display: none;
+    }
+
+
+
+    .links {
+        display: none;
+    }
+
+    .manu-icon {
+        width: 25px;
+        height: 25px;
+        visibility: visible;
+        float: left;
+        padding: 10px;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    .image-margin {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:900px) {
+    .image {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:300px) {
+
+    .cart-image {
+        width: 30px;
+        height: 30px;
+        float: right;
+        padding: 0;
+        margin-top: 10px;
+
+    }
+
+    body {
+        font-size: 0.6em;
+    }
+}
